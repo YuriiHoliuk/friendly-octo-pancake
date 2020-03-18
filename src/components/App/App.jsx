@@ -18,7 +18,7 @@ const App = (props) => {
         <div className="pen" />
         <div className="cup" />
         <div className="flower" />
-        <img src="/fon.jpg" />
+        <img alt="fon" src="/fon.jpg" />
         {/* <Content /> */}
       </div>
     </div>
