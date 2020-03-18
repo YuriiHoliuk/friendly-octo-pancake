@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+}
+
+.header {
+  &__img {
+    width: 100%;
+  }
+}
+
+// @font-face { 
+//   font-family: 'Neverwinter'; 
+//   src: url('../../fonts/Neverwinter.ttf')  format('truetype');
+//   font-weight: normal; 
+//   font-style: normal; 
+// }
+
+// @font-face { 
+//   font-family: 'Russell'; 
+//   src: url('../../fonts/Russell.otf')  format('truetype');
+//   font-weight: normal; 
+//   font-style: normal; 
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
+
