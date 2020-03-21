@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-// import 'normalize.css';
-// import Header from '../Header/index';
-// import Content from '../Content';
+import 'normalize.css';
+import Header from '../Header/index';
+import Content from '../Content';
 
 import './App.scss';
 
@@ -17,9 +17,13 @@ const App = (props) => {
       <div className="flex-wrap">
         <div className="pen" />
         <div className="cup" />
-        <div className="flower" />
-        <img alt="fon" src="/fon.jpg" />
-        {/* <Content /> */}
+        <div className="ihpone" />
+        <div className="projects">
+          <div className="projects__project projects__project-main">Get projects</div>
+          <div className="projects__project projects__project1">Uber eats</div>
+          {/* <div className="projects__lepestok" /> */}
+        </div>
+        <Content />
       </div>
     </div>
   );

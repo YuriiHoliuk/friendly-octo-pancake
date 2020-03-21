@@ -1,27 +1,123 @@
 .App {
   text-align: center;
   font-family: 'Prompt', sans-serif;
+  background: url('/img/gazon.jpg');
+  padding-top: 1vh;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.header {
-  &__img {
-    width: 100%;
+.flex-wrap {
+  background: url('/img/fon.jpg');
+  height: 95vh;
+  display: flex;
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
+  box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  height: 98vh;
+  box-sizing: border-box;
+}
+
+.pen {
+  background: url(/img/pen.png);
+  width: 32px;
+  height: 512px;
+  background-size: 66%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 219px;
+  top: 110px;
+}
+
+.cup {
+  background: url('/img/cup.png');
+  width: 331px;
+  height: 296px;
+  position: absolute;
+  right: -84px;
+  top: 95px;
+  background-size: 71%;
+  background-repeat: no-repeat;
+}
+
+.ihpone {
+  background: url('/img/i-keys.png');
+  width: 331px;
+  height: 336px;
+  position: absolute;
+  right: -136px;
+  top: 394px;
+  transform: rotate(-25deg);
+  background-size: 56%;
+  background-repeat: no-repeat;
+}
+
+.projects {
+
+  &__project {
+    &:hover {
+      z-index: 1;
+    }
+  }
+
+  &__project-main {
+    background: url(/img/projects-main.jpg);
+    box-sizing: border-box;
+    width: 170px;
+    height: 93px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding-top: 57px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #442e27;
+    left: 59px;
+    top: 394px;
+    box-shadow: 1px -1px 1px -1px rgba(0, 0, 0, 1);
+  }
+
+  &__project1 {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 170px;
+    height: 99px;
+    position: absolute;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #442e27;
+    left: 59px;
+    top: 364px;
+    box-shadow: 4px 3px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  &__lepestok {
+    background: url('/img/lepestok.png');
+    width: 331px;
+    height: 336px;
+    position: absolute;
+    right: 136px;
+    top: 294px;
   }
 }
 
-// @font-face { 
-//   font-family: 'Neverwinter'; 
-//   src: url('../../fonts/Neverwinter.ttf')  format('truetype');
-//   font-weight: normal; 
-//   font-style: normal; 
-// }
+@font-face { 
+  font-family: 'Neverwinter'; 
+  src: url('/fonts/Neverwinter.ttf')  format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
+}
 
-// @font-face { 
-//   font-family: 'Russell'; 
-//   src: url('../../fonts/Russell.otf')  format('truetype');
-//   font-weight: normal; 
-//   font-style: normal; 
-// }
+@font-face { 
+  font-family: 'Russell'; 
+  src: url('/fonts/Russell.otf')  format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
+}
 
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
 
