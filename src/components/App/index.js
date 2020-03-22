@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import App from './App';
-import { startLoading } from '../../store/actions';
+import { startLoading, recievCategories } from '../../store/actions';
 
 const mapDispatchToProps = {
-  startLoading,
+  startLoading, recievCategories,
 };
 
 export default connect(

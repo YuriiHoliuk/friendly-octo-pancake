@@ -17,12 +17,7 @@ const App = (props) => {
       <div className="flex-wrap">
         <div className="pen" />
         <div className="cup" />
-        <div className="ihpone" />
-        <div className="projects">
-          <div className="projects__project projects__project-main">Get projects</div>
-          <div className="projects__project projects__project1">Uber eats</div>
-          {/* <div className="projects__lepestok" /> */}
-        </div>
+        <div className="iphone" />
         <Content />
       </div>
     </div>

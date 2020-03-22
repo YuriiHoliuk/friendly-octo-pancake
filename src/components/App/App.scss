@@ -9,15 +9,14 @@
 
 .flex-wrap {
   background: url('/img/fon.jpg');
-  height: 95vh;
   display: flex;
   position: relative;
   max-width: 1280px;
   margin: auto;
   box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.75);
   border-radius: 10px;
-  height: 98vh;
   box-sizing: border-box;
+  padding-bottom: 30px;
 }
 
 .pen {
@@ -27,8 +26,8 @@
   background-size: 66%;
   background-repeat: no-repeat;
   position: absolute;
-  right: 219px;
-  top: 110px;
+  right: 44px;
+  top: 14px;
 }
 
 .cup {
@@ -42,7 +41,7 @@
   background-repeat: no-repeat;
 }
 
-.ihpone {
+.iphone {
   background: url('/img/i-keys.png');
   width: 331px;
   height: 336px;
@@ -102,6 +101,66 @@
     position: absolute;
     right: 136px;
     top: 294px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  
+}
+
+@media screen and (max-width: 1366px) {
+  .cv {
+    margin: 20px 0 0 84px;
+    transform: scale(0.95);
+  }
+
+  .projects {
+    display: none;
+  }
+
+@media screen and (max-width:1024px) {
+  .cv {
+    width: 700px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .cup, .iphone, .pen {
+    display: none;
+  }
+}
+
+
+
+  .ihpone {
+    background: url(/img/i-keys.png);
+    width: 331px;
+    height: 272px;
+    position: absolute;
+    right: 48px;
+    top: 394px;
+    transform: rotate(-19deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 156px;
+  }
+
+  .cup {
+    background: url(/img/cup.png);
+    width: 331px;
+    height: 177px;
+    position: absolute;
+    right: 74px;
+    top: 95px;
+    background-size: 103%;
+    background-repeat: no-repeat;
+    width: 200px;
+}
+  
+
+  .project {
+    left: 52px;
   }
 }
 

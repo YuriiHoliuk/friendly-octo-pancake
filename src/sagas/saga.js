@@ -5,34 +5,27 @@ import {
 } from 'redux-saga/effects';
 import {
   recievCategories,
-  recievFilters,
   finishLoading,
   ACTION_TYPES,
 } from '../store/actions';
 
-import { fetchCategories, fetchFilters } from '../api';
-
-function* getApiFilters() {
-  try {
-    const filters = yield call(fetchFilters);
-    yield put(recievFilters(filters));
-  } catch (e) {
-    console.log(e);
-  }
-}
+import { fetchCategories } from '../api';
+import repos from './repos';
 
 function* getApiCategories() {
-  try {
-    const filters = [
-      { url: 'https://api.github.com/repos/Vladyslav223/react_uber-eats' },
-      { url: 'https://api.github.com/repos/Vladyslav223/portfolio_layout_dia' },
-      { url: 'https://api.github.com/repos/Vladyslav223/js_test' },
-    ];
-    const data = yield call(() => fetchCategories(filters));
-    yield put(recievCategories(data));
-  } catch (e) {
-    console.log(e);
+  const localProjects = localStorage.getItem('localProjects');
+  if (!localProjects) {
+    try {
+      const data = yield call(() => fetchCategories(repos));
+      yield put(recievCategories(data));
+      yield localStorage.setItem('localProjects', JSON.stringify(data));
+    } catch (e) {
+      console.log(e);
+    }
   }
+  const data = JSON.parse(localStorage.localProjects);
+  console.log(data);
+  yield put(recievCategories(data));
 }
 
 function* finishLoadingCategories() {
@@ -40,7 +33,6 @@ function* finishLoadingCategories() {
 }
 
 export default function* mySaga() {
-  yield takeEvery(ACTION_TYPES.START_LOADING, getApiFilters);
-  yield takeEvery(ACTION_TYPES.RECEIVE_FILTERS, getApiCategories);
+  yield takeEvery(ACTION_TYPES.START_LOADING, getApiCategories);
   yield takeEvery(ACTION_TYPES.RECEIVE_CATEGORIES, finishLoadingCategories);
 }
