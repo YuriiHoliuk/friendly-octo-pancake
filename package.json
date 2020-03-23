@@ -1,5 +1,5 @@
 {
-  "homepage": "https://vladyslav223.github.io/portfolio",
+  "homepage": ".",
   "name": "testlint",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,8 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-form": "^8.3.0",
     "redux-saga": "^1.1.3",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "style-loader": "^1.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
