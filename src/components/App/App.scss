@@ -5,7 +5,6 @@
   padding-top: 1vh;
   height: 100vh;
   box-sizing: border-box;
-  
 }
 
 .flex-wrap {
@@ -118,6 +117,7 @@
   .projects {
     display: none;
   }
+}  
 
 @media screen and (max-width:1024px) {
   .cv {
@@ -130,9 +130,6 @@
   .cup, .iphone, .pen {
     display: none;
   }
-}
-
-
 
   .ihpone {
     background: url(/img/i-keys.png);
@@ -157,13 +154,17 @@
     background-size: 103%;
     background-repeat: no-repeat;
     width: 200px;
-}
-  
+ }
 
   .project {
     left: 52px;
-  }
+ }
 }
+
+
+
+
+
 
 @font-face { 
   font-family: 'Neverwinter'; 
@@ -180,4 +181,3 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
-
