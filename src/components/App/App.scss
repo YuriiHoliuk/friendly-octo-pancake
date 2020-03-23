@@ -1,14 +1,14 @@
 .App {
   text-align: center;
   font-family: 'Prompt', sans-serif;
-  background: url('img/gazon.jpg');
+  background: url('/img/gazon.jpg');
   padding-top: 1vh;
   height: 100vh;
   box-sizing: border-box;
 }
 
 .flex-wrap {
-  background: url('img/fon.jpg');
+  background: url('/img/fon.jpg');
   display: flex;
   position: relative;
   max-width: 1280px;
@@ -20,7 +20,7 @@
 }
 
 .pen {
-  background: url('img/pen.png');
+  background: url(/img/pen.png);
   width: 32px;
   height: 512px;
   background-size: 66%;
@@ -31,7 +31,7 @@
 }
 
 .cup {
-  background: url('img/cup.png');
+  background: url('/img/cup.png');
   width: 331px;
   height: 296px;
   position: absolute;
@@ -42,7 +42,7 @@
 }
 
 .iphone {
-  background: url('img/i-keys.png');
+  background: url('/img/i-keys.png');
   width: 331px;
   height: 336px;
   position: absolute;
@@ -62,7 +62,7 @@
   }
 
   &__project-main {
-    background: url('img/projects-main.jpg');
+    background: url(/img/projects-main.jpg);
     box-sizing: border-box;
     width: 170px;
     height: 93px;
@@ -95,7 +95,7 @@
   }
   
   &__lepestok {
-    background: url('img/lepestok.png');
+    background: url('/img/lepestok.png');
     width: 331px;
     height: 336px;
     position: absolute;
@@ -134,7 +134,7 @@
 
 
   .ihpone {
-    background: url('img/i-keys.png');
+    background: url(/img/i-keys.png);
     width: 331px;
     height: 272px;
     position: absolute;
@@ -147,7 +147,7 @@
   }
 
   .cup {
-    background: url('img/cup.png');
+    background: url(/img/cup.png);
     width: 331px;
     height: 177px;
     position: absolute;
@@ -166,14 +166,14 @@
 
 @font-face { 
   font-family: 'Neverwinter'; 
-  src: url('fonts/Neverwinter.ttf')  format('truetype');
+  src: url('/fonts/Neverwinter.ttf')  format('truetype');
   font-weight: normal; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: 'Russell'; 
-  src: url('fonts/Russell.otf')  format('truetype');
+  src: url('/fonts/Russell.otf')  format('truetype');
   font-weight: normal; 
   font-style: normal; 
 }
