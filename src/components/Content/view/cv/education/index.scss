@@ -4,15 +4,16 @@
     grid-area: education;
        
     &__education-title {
-        font-size: 12px;
-        letter-spacing: 1.4px;
+        font-size: 15px;
+        letter-spacing: 0.7px;
         background: #d8ba43;
-        color: #3d4047;
+        color: #000000;
         font-weight: bold;
         margin: 0;
-        padding: 11px 22px;
+        padding: 8px 22px;
         text-transform: uppercase;
         text-align: right;
+        font-family: "roboto";
     }
 
     &__vuz {

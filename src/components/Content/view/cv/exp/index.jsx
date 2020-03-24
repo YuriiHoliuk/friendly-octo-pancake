@@ -4,9 +4,17 @@ import './index.scss';
 
 const Exp = () => (
   <div className="exp">
-    <h3 className="exp__pe-title">Professional experience</h3>
-    <p className="exp__accent-gray" />
-    <p className="exp__pe-description">Six month of experience in frontend development (React/Redux/HTML/CSS/JS/WordPress)</p>
+    <div className="exp__experience">
+      <h3 className="exp__pe-title">Professional experience</h3>
+      <p className="exp__accent-gray" />
+      <p className="exp__pe-description">
+        Six month of experience in
+        <br className="profile-description__br profile-description__hr"/>
+        frontend development
+        <br className="profile-description__br profile-description__hr"/>
+        React/Redux/HTML/CSS/JS/WordPress
+      </p>
+    </div>
     <h3 className="exp__pe-title exp__pe-title-1">Professional skillset</h3>
     <p className="exp__accent-gray exp__accent-gray2" />
     <div className="exp__skillset">
@@ -59,9 +67,9 @@ const Exp = () => (
         </p>
         <hr className="exp__hr" />
       </div>
-      <div className="exp__item-wrap">
+      <div className="exp__item-wrap exp__item-wrap6">
         <span className="exp__item">
-          PSD to HTML:
+          PSD to<br/> HTML:
         </span>
         <p className="exp__skill">
 
@@ -69,9 +77,9 @@ const Exp = () => (
         </p>
         <hr className="exp__hr" />
       </div>
-      <div className="exp__item-wrap">
+      <div className="exp__item-wrap exp__item-wrap7">
         <span className="exp__item">
-          Version control:
+          Version<br/> control:
         </span>
         <p className="exp__skill">
 

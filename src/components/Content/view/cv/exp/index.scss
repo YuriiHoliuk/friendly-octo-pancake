@@ -6,7 +6,7 @@
         font-size: 13px;
         font-weight: bold;
         text-align: left;
-        padding: 4px 0 5px;
+        padding: 3px 0 5px;
         color: #41414a;
         letter-spacing: 0.8px;
         text-transform: uppercase;
@@ -33,11 +33,11 @@
     background-color: #828282;
     position: absolute;
     left: 52px;
-    top: 29px;
+    top: 28px;
     }
 
     &__accent-gray2 {
-    top: 111px;
+    top: 109px;
     }
 
     &__skillset {
@@ -51,6 +51,24 @@
         line-height: 23px;  
         position: relative; 
         left: -98px;   
+    }
+    
+    &__item-wrap6 {
+        top: 2px;
+        height: 40px;
+
+        & .exp__item {
+           top: -6px;
+        }
+    }
+
+    &__item-wrap7 {
+        height: 35px;
+        top: 4px;
+
+        & .exp__item {
+            top: -11px;
+        }
     }
 
     &__item {

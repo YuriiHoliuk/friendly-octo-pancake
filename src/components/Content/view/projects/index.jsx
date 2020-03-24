@@ -8,9 +8,11 @@ const Projects = (props) => {
   console.log('projects', projects);
   return (
     <div className="projects">
-      {
+      <div className="projects__container">
+        {
           (Array.isArray(projects)) && projects.map((project) => (<Project key={project.data.id} project={project} />))
-    }
+        }
+      </div>
     </div>
   );
 };

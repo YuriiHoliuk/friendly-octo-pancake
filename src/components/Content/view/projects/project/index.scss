@@ -1,18 +1,14 @@
 .project {
    
-    margin: -40px 0;
     background-size: 100%;
-    position: relative;
     perspective: 500px;
     transform: rotate(-12deg);
-    top: 310px;
-    left: 83px;
-    display: block;
-  
+    margin-top: -28px;
+
     &__container {
         height: 90px;
         width: 175px;
-        box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.25);
+        box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.45);
         transition: transform 0.2s;
         &:hover {
             transform: translate(-2px, -38px);
@@ -25,7 +21,7 @@
 
     &__name-Uber_eats {
         background: url('/img/visitki/uber.jpg');
-        transform: rotate3d(2, 1, 14, -10deg);
+        transform: rotate3d(28, -6, 28, 20deg);
 
         .project__name {
             color: white;

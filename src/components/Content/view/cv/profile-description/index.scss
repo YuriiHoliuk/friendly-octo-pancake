@@ -10,4 +10,8 @@
     padding: 16px 30px 13px 50px;
     background: #b39933;
     grid-area: description;
+    
+    &__br {
+        display: none;
+    }
 }
