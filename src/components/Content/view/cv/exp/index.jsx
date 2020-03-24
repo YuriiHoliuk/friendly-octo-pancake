@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.scss';
+// import './index.scss';
 
 const Exp = () => (
   <div className="exp">
@@ -9,9 +9,9 @@ const Exp = () => (
       <p className="exp__accent-gray" />
       <p className="exp__pe-description">
         Six month of experience in
-        <br className="profile-description__br profile-description__hr"/>
+        <br className="profile-description__br profile-description__hr" />
         frontend development
-        <br className="profile-description__br profile-description__hr"/>
+        <br className="profile-description__br profile-description__hr" />
         React/Redux/HTML/CSS/JS/WordPress
       </p>
     </div>
@@ -69,7 +69,10 @@ const Exp = () => (
       </div>
       <div className="exp__item-wrap exp__item-wrap6">
         <span className="exp__item">
-          PSD to<br/> HTML:
+          PSD to
+          <br />
+          {' '}
+          HTML:
         </span>
         <p className="exp__skill">
 
@@ -79,7 +82,10 @@ const Exp = () => (
       </div>
       <div className="exp__item-wrap exp__item-wrap7">
         <span className="exp__item">
-          Version<br/> control:
+          Version
+          <br />
+          {' '}
+          control:
         </span>
         <p className="exp__skill">
 

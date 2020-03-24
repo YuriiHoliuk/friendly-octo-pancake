@@ -7,7 +7,7 @@ import ProfileDescription from './profile-description';
 import Contacts from './contacts';
 import Exp from './exp';
 import Education from './education';
-import './index.scss';
+// import './index.scss';
 
 const CV = () => (
   <div className="cv">

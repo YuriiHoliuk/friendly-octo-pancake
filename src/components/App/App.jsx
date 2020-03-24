@@ -5,7 +5,7 @@ import 'normalize.css';
 import Header from '../Header/index';
 import Content from '../Content';
 
-import './App.scss';
+// import './App.scss';
 
 const App = (props) => {
   useEffect(() => {

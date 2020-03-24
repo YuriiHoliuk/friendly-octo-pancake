@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.scss';
+// import './index.scss';
 
 const Project = ({ project }) => (
   <a href={project.data.homepage} target="_blank" className="project">
