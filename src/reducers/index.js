@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import data from './data';
+import projects from './projects';
 import finish from './finish';
 
 const createRootReducer = () => combineReducers({
-  data,
+  projects,
   form: formReducer,
   finish,
 });

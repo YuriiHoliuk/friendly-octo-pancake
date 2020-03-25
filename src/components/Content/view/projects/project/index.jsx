@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import './index.scss';
-
 const Project = ({ project }) => (
   <a href={project.data.homepage} target="_blank" rel="noopener noreferrer" className="project">
     <div className={`project__container project__name-${project.data.name}`}>

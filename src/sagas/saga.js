@@ -4,35 +4,34 @@ import {
   put,
 } from 'redux-saga/effects';
 import {
-  recievCategories,
+  recieveProjects,
   finishLoading,
   ACTION_TYPES,
 } from '../store/actions';
 
-import { fetchCategories } from '../api';
+import { fetchProjects } from '../api';
 import repos from './repos';
 
-function* getApiCategories() {
+function* getApiProjects() {
   const localProjects = localStorage.getItem('localProjects');
   if (!localProjects) {
     try {
-      const data = yield call(() => fetchCategories(repos));
-      yield put(recievCategories(data));
+      const data = yield call(() => fetchProjects(repos));
+      yield put(recieveProjects(data));
       yield localStorage.setItem('localProjects', JSON.stringify(data));
     } catch (e) {
       console.log(e);
     }
   }
   const data = JSON.parse(localStorage.localProjects);
-  console.log(data);
-  yield put(recievCategories(data));
+  yield put(recieveProjects(data));
 }
 
-function* finishLoadingCategories() {
+function* finishLoadingProjects() {
   yield put(finishLoading());
 }
 
 export default function* mySaga() {
-  yield takeEvery(ACTION_TYPES.START_LOADING, getApiCategories);
-  yield takeEvery(ACTION_TYPES.RECEIVE_CATEGORIES, finishLoadingCategories);
+  yield takeEvery(ACTION_TYPES.START_LOADING, getApiProjects);
+  yield takeEvery(ACTION_TYPES.RECEIVE_PROJECTS, finishLoadingProjects);
 }

@@ -3,9 +3,9 @@ import React from 'react';
 import CV from './view/cv';
 import Projects from './view/projects';
 
-const Content = ({ data }) => (
+const Content = ({ projects, startLoading }) => (
   <>
-    <Projects projects={data} />
+    <Projects startLoading={startLoading} projects={projects} />
     <CV />
   </>
 

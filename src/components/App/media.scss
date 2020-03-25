@@ -42,24 +42,29 @@
 @media screen and (max-width: 1200px){
     .iphone {
         width: 125px;
-        height: 215px;
-        right: 2px;
-        transform: rotate(0deg);
-        top: 533px;
+        height: 249px;
+        right: 99px;
+        transform: rotate(-13deg);
+        top: 613px;
+    }
+
+    .get {
+        left: 92px;
+        top: 44px;
     }
 
     .cup {
         width: 100px;
         height: 174px;
         right: 1px;
-        top: 276px;
+        top: 156px;
     }
 
     .pen {
         width: 28px;
         height: 240px;
-        right: 96px;
-        top: 46px;
+        left: 724px;
+        top: 61px;
     }
 
     .projects {
@@ -71,7 +76,8 @@
     }
 
     .cv {
-        margin: 20px 0 0 -42px;
+        margin: 20px 0 0 24px;
+        order: -1;
     }
     
 }
@@ -88,8 +94,14 @@
     }
 
     .projects {
-        right: -90px;
+        right: 7px;
+        left: unset;
         align-items: flex-end;
+    }
+
+    .get {
+        left: 22px;
+        top: 544px;
     }
 
     .iphone {
@@ -122,8 +134,9 @@
 
     .projects {
         left: 2%;
-        align-items: center;
-        height: 591px;
+        align-items: flex-start;
+        height: 333px;
+        top: 305px;
         transform: scale(0.75);
 
         &__container {
@@ -132,19 +145,25 @@
     }
 
     .iphone {
-        width: 147px;
-        height: 248px;
         left: auto;
-        right: 1px;
-        transform: rotate(0);
-        top: 500px;
+        right: 25px;
+        transform: rotate(-10deg);
+        top: 555px;
+    }
+    .project__container {     
+        box-shadow: 0px 2px 1px 2px rgba(0, 0, 0, 0.35);
+    }
+
+    .get {
+        left: 5px;
+        top: -151px;
     }
 
     .cup {
-        top: 50px;
+        top: 18px;
         width: 151px;
         height: 174px;
-        left: 604px;
+        left: 640px;
     }
 
     .pen {
@@ -159,8 +178,10 @@
     }
 }
  
-@media screen and (max-width: 768px) {
-
+@media screen and (min-width: 421px) and (max-width: 767px) and (orientation: portrait) {
+    .pen, .cup, .iphone, .projects {
+        display: none;
+    }
 }
 
 
@@ -172,7 +193,8 @@
       flex-wrap: wrap;
       border-radius: 0;
       box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.59);
-      background: transparent;      
+      background: transparent;
+      height: 2400px;      
   }
 
   .cv {
@@ -192,43 +214,34 @@
   }
 
   .pen {
-    left: 293px;
+    left: 188px;
     top: unset;
-    width: 15px;
-    bottom: 74px;
-    transform: rotate(151deg);
+    width: 16px;
+    bottom: -78px;
   }
 
   .cup {
-    left: -20px;
-    top: unset;
-    bottom: -33px;
-    width: 100px;
-    height: 100px;
-    background-size: 100%;
-    background-position: center;
-    transform: rotate3d(213, 45, 122, -11deg);
+    display: none;
   }
 
   .iphone {
-    left: 270px;
-    top: unset;
-    bottom: -9px;
-    box-shadow: 1px 1px 5px 1px rgba(1, 1, 2, 0.59);
-    transform: rotate3d(65, 24, -83, 56deg);
-    border-radius: 15px;
-    height: 169px;
-    width: 87px;
-    background-size: 123%;
-    background-position: center;
-    background-repeat: repeat;
-    background-position-x: -2px;
+    display: none;
   }
 
+  .get {
+    left: 78px;
+    top: -78px;
+    transform: rotate3d(89, -40, 126, 50deg);
+    width: 229px;
+    height: 124px;
+}
+
   .projects {
-    left: -37px;
-    bottom: -110px;
+    left: -24px;
+    bottom: -173px;
+    top: unset;
     transform: scale(0.75);
+    perspective: 500px;
 
     &__container {
         transform: rotate(34deg);
@@ -246,7 +259,7 @@
         }
 
         &__name-Uber_eats {
-            transform: rotate3d(44, -9, 17, 36deg);
+            transform: rotate3d(81, -47, 17, 38deg);
         }
 
         &__name-portfolio_layout_dia {
@@ -298,7 +311,7 @@
     height: auto;
     text-align: center;
     color: #e6c522;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 1.8px;
@@ -344,8 +357,6 @@
   }
 
   .contacts-wrap {
-      
-
       &__contacts-title {
         font-family: 'Cormorant', sans-serif;
         letter-spacing: 2px;

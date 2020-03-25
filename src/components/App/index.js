@@ -1,12 +1,16 @@
 import { connect } from 'react-redux';
 import App from './App';
-import { startLoading, recievCategories } from '../../store/actions';
+import { startLoading } from '../../store/actions';
+
+const mapStateToProps = (state) => ({
+  projects: state.projects,
+});
 
 const mapDispatchToProps = {
-  startLoading, recievCategories,
+  startLoading,
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps,
 )(App);

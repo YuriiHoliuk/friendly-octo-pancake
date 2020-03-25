@@ -45,15 +45,44 @@
 }
 
 .iphone {
-  background: url(/portfolio/img/i-keys.png);
-  width: 180px;
-  height: 336px;
+  background-image: url(/portfolio/img/i-keys.png);
+  width: 145px;
+  background-color: transparent;
+  height: 284px;
   position: absolute;
-  right: -9px;
+  right: 14px;
   top: 500px;
   transform: rotate(-25deg);
-  background-size: 100%;
+  background-size: 100.5%;
   background-repeat: no-repeat;
+  border-radius: 21px;
+  box-shadow: 2px 1px 5px 2px rgba(0, 0, 0, 0.36);
+}
+
+.get { 
+    background: url(/portfolio/img/visitki/get.jpg);
+    width: 160px;
+    transform: rotate3d(28, 7, 28, -13deg);
+    background-size: 100%;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.45);
+    height: 84px;
+    border: none;
+    position: absolute;
+    top: 137px;
+    left: 9px;
+    z-index: 1;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+
+  &:hover {
+    transform: scale(1.03);
+    z-index: 0;
+  }
+  
+  &-disabled {
+    opacity: 0;
+  }
 }
 
 .projects {
@@ -134,8 +163,8 @@
   font-style: normal; 
 }
 
-@import url('/portfolio/https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
-@import url('/portfolio/https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap');
-@import url('/portfolio/https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap'); //font-family: 'Orbitron', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap'); //font-family: 'Orbitron', sans-serif;
 
 @import './media.scss';
