@@ -6,7 +6,7 @@ const ProfileTitle = () => (
   <div className="profile-title">
     Professional
     <br />
-    <img className="profile-title__square" alt="item" src="/img/square.jpg" />
+    <img className="profile-title__square" alt="item" src="/portfolio/img/square.jpg" />
     {' '}
     Profile
   </div>

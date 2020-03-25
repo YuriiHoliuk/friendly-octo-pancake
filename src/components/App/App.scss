@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Prompt', sans-serif;
-  background: url('/img/gazon.jpg');
+  background: url('/portfolio/img/gazon.jpg');
   padding-top: 1vh;
   min-height: 100vh;
   padding: 2vh 0;
@@ -9,7 +9,7 @@
 }
 
 .flex-wrap {
-  background: url('/img/fon.jpg');
+  background: url('/portfolio/img/fon.jpg');
   display: flex;
   position: relative;
   max-width: 1280px;
@@ -22,7 +22,7 @@
 }
 
 .pen {
-  background: url('../../img/pen.png');
+  background: url('/portfolio/img/pen.png');
   width: 32px;
   height: 264px;
   background-size: 66%;
@@ -33,7 +33,7 @@
 }
 
 .cup {
-  background: url(/img/cup.png);
+  background: url(/portfolio/img/cup.png);
   width: 127px;
   height: 174px;
   position: absolute;
@@ -45,7 +45,7 @@
 }
 
 .iphone {
-  background: url(/img/i-keys.png);
+  background: url(/portfolio/img/i-keys.png);
   width: 180px;
   height: 336px;
   position: absolute;
@@ -70,7 +70,7 @@
   }
 
   &__project-main {
-    background: url('/img/projects-main.jpg');
+    background: url('/portfolio/img/projects-main.jpg');
     box-sizing: border-box;
     width: 170px;
     height: 93px;
@@ -103,7 +103,7 @@
   }
   
   &__lepestok {
-    background: url('/img/lepestok.png');
+    background: url('/portfolio/img/lepestok.png');
     width: 331px;
     height: 336px;
     position: absolute;
@@ -114,7 +114,7 @@
 
 @media screen and (max-width: 420px) {
   .App {
-      background: url('/img/fon-mobile.jpg');
+      background: url('/portfolio/img/fon-mobile.jpg');
       background-size: 100% 2500px;
       background-repeat: no-repeat;
   }
@@ -122,20 +122,20 @@
 
 @font-face { 
   font-family: 'Neverwinter'; 
-  src: url('/fonts/Neverwinter.ttf')  format('truetype');
+  src: url('/portfolio/fonts/Neverwinter.ttf')  format('truetype');
   font-weight: normal; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: 'Russell'; 
-  src: url('/fonts/Russell.otf')  format('truetype');
+  src: url('/portfolio/fonts/Russell.otf')  format('truetype');
   font-weight: normal; 
   font-style: normal; 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap'); //font-family: 'Orbitron', sans-serif;
+@import url('/portfoliohttps://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
+@import url('/portfoliohttps://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap');
+@import url('/portfoliohttps://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap'); //font-family: 'Orbitron', sans-serif;
 
 @import './media.scss';

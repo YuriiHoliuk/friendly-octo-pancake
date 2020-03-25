@@ -15,7 +15,7 @@ const Contacts = () => (
             +38(099)11-77-5-77
           </div>
           <div className="contacts-wrap__icon-border contacts-wrap__icon-border1">
-            <img src="icons/phone.png" alt="contact" />
+            <img src="/portfolio/icons/phone.png" alt="contact" />
           </div>
         </a>
       </li>
@@ -28,7 +28,7 @@ const Contacts = () => (
           @gmail.com
         </div>
         <div className="contacts-wrap__icon-border contacts-wrap__icon-border2">
-          <img src="icons/email.png" alt="contact" />
+          <img src="/portfolio/icons/email.png" alt="contact" />
         </div>
       </li>
       <li className="contacts-wrap__contactme">
@@ -39,7 +39,7 @@ const Contacts = () => (
             Or write here
           </a>
         </div>
-        <div className="contacts-wrap__icon-border contacts-wrap__icon-border3"><img src="icons/telegram.png" alt="contact" /></div>
+        <div className="contacts-wrap__icon-border contacts-wrap__icon-border3"><img src="/portfolio/icons/telegram.png" alt="contact" /></div>
 
       </li>
       <li className="contacts-wrap__contactme">
@@ -50,7 +50,7 @@ const Contacts = () => (
             Kharkiv, Ukraine
           </div>
           <div className="contacts-wrap__icon-border contacts-wrap__icon-border4">
-            <img src="icons/home.png" alt="contact" />
+            <img src="/portfolio/icons/home.png" alt="contact" />
           </div>
         </a>
       </li>
