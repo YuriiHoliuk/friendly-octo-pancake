@@ -102,6 +102,7 @@
     cursor: pointer;
     opacity: 1;
     transition: transform 0.3s, opacity 0.3s 0.5s, z-index 0.3s 1.5s;
+    outline: none;
 
     &:hover {
       transform: rotate(-12deg)        
@@ -120,7 +121,7 @@
   }
 
    
-    &__getImg-Uber_eats {
+    &__getImg-react_uber-eats {
       transition: opacity 0.01s 1s, z-index 0.3s 2s, top 0.4s;             
     }
 

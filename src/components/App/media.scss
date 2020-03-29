@@ -276,8 +276,7 @@
     &__getFromGit {
         top: 176px;
         left: 22px;
-        z-index: 2;
-         transition: opacity 0.3s 2s;
+        transition: opacity 0.3s 2s, z-index 0.1s 2.5s;
 
          &:hover {
             transform: rotate(0deg);
@@ -309,7 +308,7 @@
             box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.45);
         }
 
-        &__name-Uber_eats {
+        &__name-react_uber-eats {
             transform: rotate3d(81, -47, 17, 38deg);
         }
 
