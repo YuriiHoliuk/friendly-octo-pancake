@@ -17,7 +17,7 @@ const Projects = (props) => {
 
   const onClickGetProjects = () => {
     props.startLoading();
-    setTimeout(() => setAnimationFlag(true));
+    setTimeout(() => setAnimationFlag(true), 500);
   };
 
   return (
