@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
 import projects from './projects';
-import finish from './finish';
+import isLoading from './isLoading';
 
 const createRootReducer = () => combineReducers({
   projects,
-  form: formReducer,
-  finish,
+  isLoading,
 });
 
 export default createRootReducer;

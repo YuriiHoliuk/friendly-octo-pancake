@@ -5,7 +5,7 @@ import 'normalize.css';
 import Content from '../Content';
 // import './App.scss';
 
-const App = (props) => (
+const App = () => (
   <div className="App">
     <div className="flex-wrap">
       <div className="pen" />

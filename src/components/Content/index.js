@@ -5,6 +5,7 @@ import { startLoading } from '../../store/actions';
 
 const mapStateToProps = (state) => ({
   projects: state.projects,
+  isLoading: state.isLoading,
 });
 
 const mapDispatchToProps = {

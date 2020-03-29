@@ -28,8 +28,8 @@
   background-size: 66%;
   background-repeat: no-repeat;
   position: absolute;
-  right: 44px;
-  top: 14px;
+  right: 12px;
+  top: 178px;
 }
 
 .cup {
@@ -45,7 +45,7 @@
 }
 
 .iphone {
-  background-image: url(/portfolio/img/i-keys.png);
+  background-image: url('/portfolio/img/i-keys.png');
   width: 145px;
   background-color: transparent;
   height: 284px;
@@ -59,44 +59,83 @@
   box-shadow: 2px 1px 5px 2px rgba(0, 0, 0, 0.36);
 }
 
-.get { 
+.projects {  
+  left: 65px;
+  width: 180px;
+  height: 90px;
+  position: absolute;
+ 
+  &__container {
+    width: 200px;
+    height: 250px;
+    position: absolute;    
+  } 
+
+  &__getImg {
+    position: absolute;
+    z-index: 2;
+    left: 38px;
+    top: -92px;
+    width: 86px;
+    display: block;    
+  }
+
+  &__getImgContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+    
+  &__getFromGit { 
     background: url(/portfolio/img/visitki/get.jpg);
-    width: 160px;
-    transform: rotate3d(28, 7, 28, -13deg);
+    width: 178px;
     background-size: 100%;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.45);
     height: 84px;
     border: none;
     position: absolute;
-    top: 137px;
-    left: 9px;
-    z-index: 1;
+    top: 161px;
+    left: -9px;
+    z-index: 2;
     outline: none;
     cursor: pointer;
-    transition: transform 0.3s, opacity 0.3s;
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s 0.5s, z-index 0.3s 1.5s;
+    //transition: transform 0.3s, opacity 0.3s 1s;    
 
-  &:hover {
-    transform: scale(1.03);
-    z-index: 0;
+    &:hover {
+      transform: rotate(-12deg)        
+    }
+      
+    &--disabled {
+      opacity: 0;
+      z-index: -1;
+    }
   }
   
-  &-disabled {
+  &__getImg {
+    top: 166px;
     opacity: 0;
+    z-index: -1; 
   }
-}
 
-.projects {
-  display: flex;
-  align-items: center;
-  position: relative;
-  left: 90px;
+   
+    &__getImg-Uber_eats {
+      transition: opacity 0.01s 1s, z-index 0.3s 2s, top 0.4s;             
+    }
 
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    height: 250px;
-  }
+    &__getImg-portfolio_layout_dia {
+      transition: opacity 0.01s 1s, z-index 0.3s 2s, top 0.4s 0.05s;               
+    }
+
+    &__getImg-portfolio_layout_miami {
+      transition: opacity 0.01s 1s, z-index 0.3s 2s, top 0.4s 0.1s;         
+    }
+
+    &__getImg-js_test {
+      transition: opacity 0.01s 1s, z-index 0.3s 2s, top 0.4s 0.15s;         
+    }
 
   &__project-main {
     background: url('/portfolio/img/projects-main.jpg');

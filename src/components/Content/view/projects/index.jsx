@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Project from './project';
 // import './index.scss';
 
 const Projects = (props) => {
   const { projects } = props;
+  const [flag, setAnimationFlag] = useState(false);
+
   const lepestok = {
     data: {
       homepage: 'https://lepestok.top/',
@@ -12,20 +14,43 @@ const Projects = (props) => {
       description: 'Flexbox / Woocommerce / SEO / Google, FCB Ads',
     },
   };
-  console.log('projects', projects);
+
+  const onClickGetProjects = () => {
+    props.startLoading();
+    setTimeout(() => setAnimationFlag(true));
+  };
+
   return (
     <div className="projects">
-      <button type="button" aria-label="Get projects" onClick={() => props.startLoading()} className={!props.projects.length ? 'get' : 'get get-disabled'} />
       <div className="projects__container">
-
         {
           (Array.isArray(projects)) && projects.map((project) => (
-            <Project key={project.data.id} project={project} />
+            <Project key={project.data.id} project={project} animated={flag} />
           ))
         }
         {
-          (Array.isArray(projects)) && (<Project project={lepestok} />)
+          (Array.isArray(projects)) && (<Project project={lepestok} animated={flag} />)
         }
+        <div className="projects__scene">
+          {
+              (Array.isArray(projects)) && projects.map((project) => (
+                <img
+                  className={!flag
+                    ? 'projects__getImg'
+                    : `projects__getImg projects__getImg-${project.data.name}`}
+                  src="/portfolio/img/projects.png"
+                  alt="projects"
+                />
+              ))
+            }
+        </div>
+        <button
+          type="button"
+          aria-label="GetFromGit-projects"
+          onClick={() => onClickGetProjects()}
+          className={
+          !flag ? 'projects__getFromGit' : 'projects__getFromGit projects__getFromGit--disabled'
+      } />
       </div>
     </div>
   );

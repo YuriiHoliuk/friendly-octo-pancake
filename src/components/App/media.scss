@@ -1,6 +1,6 @@
 @media screen and (max-width: 1420px) {
     .cv {
-        margin: 20px 0 0 23px;
+        margin: 20px 0 0 220px;
         transform: scale(0.95);
     }
   
@@ -35,7 +35,11 @@
     }
 
     .project {
-        left: 52px;
+        left: 10px;
+        
+        &--animated {
+            transform: rotate(-27deg);
+        }
     }
 }
 
@@ -57,7 +61,7 @@
         width: 100px;
         height: 174px;
         right: 1px;
-        top: 156px;
+        top: 393px;
     }
 
     .pen {
@@ -68,7 +72,10 @@
     }
 
     .projects {
-        left: 0;
+        position: relative;
+        left: 31px;
+        top: -67px;
+
 
         &__container {
             transform: scale(0.8);
@@ -94,29 +101,41 @@
     }
 
     .projects {
-        right: 7px;
+        right: 8px;
         left: unset;
         align-items: flex-end;
+        height: 392px;
+
+        &__container {
+            flex-wrap: wrap;
+            width: 200px;
+            height: 90px;
+            margin-left: -18px;
+        }
+    }
+
+    .project {
+        // transform: rotate(-41deg);
     }
 
     .get {
-        left: 22px;
-        top: 544px;
+        left: -10px;
+        top: 234px;
     }
 
     .iphone {
-        left: 716px;
-        transform: rotate3d(44, 13, 17, 11deg);
-        top: 251px;
+        right: 35px;
+        transform: rotate3d(0, 2, 2, 29deg);
+        top: 606px;
     }
 
     .pen {
-        left: 690px;
-        top: 95px;
+        left: 676px;
+        
     }
 
     .cup {   
-        top: 80px;
+        top: 393px;
     }  
 }
 
@@ -136,7 +155,7 @@
         left: 2%;
         align-items: flex-start;
         height: 333px;
-        top: 305px;
+        top: 0;
         transform: scale(0.75);
 
         &__container {
@@ -174,7 +193,7 @@
 }
 @media screen and (max-width: 850px) {
     .projects {
-        left: -8%;
+        left: -40px;
     }
 }
  
@@ -186,6 +205,12 @@
 
 
 @media screen and (max-width: 420px) {
+
+    .App {
+    background: url(/portfolio/img/fon-mobile.jpg);
+    background-size: 100% 2430px;
+    background-repeat: no-repeat;
+}
    
   .flex-wrap {
       justify-content: center;
@@ -228,23 +253,39 @@
     display: none;
   }
 
-  .get {
-    left: 78px;
-    top: -78px;
-    transform: rotate3d(89, -40, 126, 50deg);
-    width: 229px;
-    height: 124px;
-}
-
   .projects {
-    left: -24px;
-    bottom: -173px;
+    left: 125px;
+    bottom: 0px;
     top: unset;
     transform: scale(0.75);
     perspective: 500px;
+    z-index: 1;
+
+    &__getImg {
+        top: 180px;
+        left: 130px;
+        opacity: 0;
+        z-index: -1; 
+    }
 
     &__container {
         transform: rotate(34deg);
+        top: -40px;
+        left: 35px;
+    }
+    &__getFromGit {
+        top: 176px;
+        left: 22px;
+        z-index: 2;
+         transition: opacity 0.3s 2s;
+
+         &:hover {
+            transform: rotate(0deg);
+        }
+
+        --disabled {
+            opacity: 0;
+        }
     }
 }
 
@@ -252,7 +293,16 @@
         background-size: 100%;
         perspective: 200px;
         transform: rotate(-13deg);
-        margin-top: -28px;
+        margin-top: -90px;
+        opacity: 0;
+
+        &--animated {
+            display: block;
+            transition: transform 1s 1s, top 0.3s, opacity 0.2s 0.8s, margin 0.5s 2s;
+            margin-top: -28px;
+            opacity: 1;
+            top: 260px;
+        }
 
         &__container {       
             box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.45);
