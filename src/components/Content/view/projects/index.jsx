@@ -24,12 +24,12 @@ const Projects = (props) => {
     <div className="projects">
       <div className="projects__container">
         {
+          (Array.isArray(projects)) && (<Project project={lepestok} animated={flag} />)
+        }
+        {
           (Array.isArray(projects)) && projects.map((project) => (
             <Project key={project.data.id} project={project} animated={flag} />
           ))
-        }
-        {
-          (Array.isArray(projects)) && (<Project project={lepestok} animated={flag} />)
         }
         <div className="projects__scene">
           {
